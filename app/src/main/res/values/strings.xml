@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">Newspaper</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welcome to Newspaper</string>
+    <string name="onboarding_start">Get Started</string>
+
+    <!-- Main - Navigation -->
+    <string name="your_news">Your News</string>
+    <string name="headlines">Headlines</string>
+    <string name="saved">Saved</string>
+
+    <!-- Main - menu -->
+    <string name="settings">Settings</string>
+
+    <!-- Main - No news in saved fragment -->
+    <string name="no_saved_news">You haven\'t saved any articles yet. Tap the star when viewing an article to save it.</string>
+
+    <!-- Detail - menu -->
+    <string name="save_article">Save</string>
+    <string name="view_in_browser">View in browser</string>
+    <string name="remove_source">Remove this source</string>
+
+    <!-- Detail - Snackbar -->
+    <string name="snackbar_saved_news">Article has been saved</string>
+    <string name="snackbar_removed_saved_news">Article is no longer saved</string>
+
+    <!-- Detail - No browser on device -->
+    <string name="no_browser_available">No browser available</string>
+
+    <!-- Settings - Category Titles -->
+    <string name="pref_category_dev_features">Development Features</string>
+    <string name="pref_category_about">About</string>
+
+    <!-- Settings - Preference Keys & Titles -->
+    <string name="pref_key_sources">sources</string>
+    <string name="pref_title_sources">Sources</string>
+
+    <string name="pref_key_country">country</string>
+    <string name="pref_title_country">Country</string>
+
+    <string name="pref_key_onboarding">first_time</string>
+
+</resources>

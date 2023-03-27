@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/pref_category_dev_features">
+
+        <EditTextPreference
+            app:key="@string/pref_key_sources"
+            app:title="@string/pref_title_sources"
+            app:summary="Enter sources id"
+            app:defaultValue="bbc-news" />
+
+        <ListPreference
+            app:key="@string/pref_key_country"
+            app:title="@string/pref_title_country"
+            app:summary="Select country to choose news from"
+            app:entries="@array/pref_country_labels"
+            app:entryValues="@array/pref_country_values"
+            app:defaultValue="gb" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_category_about">
+
+        <Preference
+            app:title="Made by Talha"
+            app:summary="Verion 0.0.0.0.thisShouldn'tEvenHaveAVersion" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

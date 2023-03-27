@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.abdulkuddus.talha.newspaper.fragments.PersonalNewsFragment"
+        android:label="Newspaper"
+        tools:layout="@layout/fragment_personal_news" />
+    <fragment
+        android:id="@+id/headlinesNewsFragment"
+        android:name="com.abdulkuddus.talha.newspaper.fragments.HeadlinesNewsFragment"
+        android:label="Headlines"
+        tools:layout="@layout/fragment_headlines_news" />
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.abdulkuddus.talha.newspaper.fragments.SavedNewsFragment"
+        android:label="Saved"
+        tools:layout="@layout/fragment_saved_news" />
+    <action
+        android:id="@+id/action_global_mainFragment"
+        app:destination="@id/mainFragment"
+        app:enterAnim="@anim/nav_fade_zoom_in_anim"
+        app:exitAnim="@anim/nav_fade_out_anim"
+        app:popEnterAnim="@anim/nav_fade_zoom_in_anim"
+        app:popExitAnim="@anim/nav_fade_out_anim"
+        app:popUpTo="@id/nav_graph" />
+    <action
+        android:id="@+id/action_global_headlinesNewsFragment"
+        app:destination="@id/headlinesNewsFragment"
+        app:enterAnim="@anim/nav_fade_zoom_in_anim"
+        app:exitAnim="@anim/nav_fade_out_anim"
+        app:popEnterAnim="@anim/nav_fade_zoom_in_anim"
+        app:popExitAnim="@anim/nav_fade_out_anim"
+        app:popUpTo="@id/mainFragment" />
+    <action
+        android:id="@+id/action_global_savedNewsFragment"
+        app:destination="@id/savedNewsFragment"
+        app:enterAnim="@anim/nav_fade_zoom_in_anim"
+        app:exitAnim="@anim/nav_fade_out_anim"
+        app:popEnterAnim="@anim/nav_fade_zoom_in_anim"
+        app:popExitAnim="@anim/nav_fade_out_anim"
+        app:popUpTo="@id/mainFragment" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.abdulkuddus.talha.newspaper.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" >
+        <argument android:name="newsObject"
+            app:argType="com.abdulkuddus.talha.newspaper.News"/>
+    </activity>
+    <action android:id="@+id/action_global_detailActivity" app:destination="@id/detailActivity" />
+</navigation>
